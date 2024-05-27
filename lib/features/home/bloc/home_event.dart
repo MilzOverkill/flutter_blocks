@@ -6,11 +6,21 @@ class HomeInitialEvent extends HomeEvent{}
 
 //this is the first event created
 class HomeProductWishListButtonClickedEvent extends HomeEvent{
+  final ProductDataModel clickedProduct;
+  HomeProductWishListButtonClickedEvent({
+    required this.clickedProduct,
+  });
+  
+
 
 }
 
 //2nd event 
 class HomeProductCartButtonClickedEvent extends HomeEvent{
+   final ProductDataModel clickedProduct;
+  HomeProductCartButtonClickedEvent({
+    required this.clickedProduct,
+  });
 
 }
 
